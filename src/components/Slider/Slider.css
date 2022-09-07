@@ -1,0 +1,70 @@
+.Slider {
+    display: flex;
+    flex-flow: column;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo img {
+    width: 7rem;
+    height: auto;
+}
+
+.routes {
+    display: flex;
+    flex-flow: wrap column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.routes>a{
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    gap: 1rem;
+    font-size: 14px;
+    padding: 1rem;
+    margin-left: 1rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.routes>a.active {
+    background-color: var(--activeItem);
+    margin-left: 0;
+}
+
+/* For Laptop */
+@media screen and (max-width : 1200px) {
+    .routes>a {
+        height: 3rem;
+        overflow: hidden;
+    }
+    .routes>a span {
+       display: none;
+    }
+}
+
+/* For Landscape */
+@media screen and (max-width : 992px) {
+    .logo img {
+        width: 2.5rem;
+    }
+}
+
+/* For Tablet */
+@media screen and (max-width : 786px) {
+    .Slider {
+        display: none;
+    }
+
+    .routes>a span {
+        display: block;
+     }
+}

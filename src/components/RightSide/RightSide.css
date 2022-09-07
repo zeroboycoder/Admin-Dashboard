@@ -1,0 +1,13 @@
+.RightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* For Tablet */
+@media screen and (max-width : 786px) {
+    .RightSide {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+  }

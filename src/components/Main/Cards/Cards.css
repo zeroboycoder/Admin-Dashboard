@@ -1,0 +1,13 @@
+.Cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+
+/* For Landscape Tablet */
+@media screen and (max-width : 992px) {
+    .Cards {
+        flex-direction: column;
+    }
+}

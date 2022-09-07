@@ -1,0 +1,61 @@
+.backTap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000001f;
+    z-index: 11;
+}
+
+.NavbarContainer {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 56px;
+    background-color: white;
+    box-shadow: 0px 2px 10px #0000007f;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavLogo {
+    width: 4rem;
+}
+
+.NavLogo img {
+    width: 100%;
+}
+
+.SlideDraw {
+    display: block;
+    position: fixed;
+    z-index: 12;
+    background-color: white;
+    width: 60%;
+    height: 100vh;
+    transition: all 0.3;
+}
+
+.SlideDraw .logo {
+    margin-top: 2rem;
+}
+
+.SlideDraw .logo img {
+    width: 3.5rem;
+}
+
+.routes>a span {
+    display: block;
+ }
+
+ /* For  Tablet */
+@media screen and (min-width : 786px) {
+    .Nav {
+        display: none;
+    }
+}

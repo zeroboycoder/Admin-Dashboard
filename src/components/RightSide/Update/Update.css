@@ -1,0 +1,76 @@
+.Updates {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  width: 95%;
+  margin: 1rem 1rem 1rem 0;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 2px 12px #0000002a;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.box .head {
+  width: 5rem;
+}
+
+.head img {
+  width: 100%;
+}
+
+.box .tail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 14px;
+}
+
+.tail .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.tail .text p{
+  margin: 0;
+}
+
+.text p:nth-of-type(1) {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tail span {
+  color: var(--black);
+  font-size: 12.5px;
+}
+
+
+/* For Laptop */
+@media screen and (max-width : 1200px) {
+  .text p:nth-of-type(1) {
+    font-size: 15px;
+  }
+
+  .text p:nth-of-type(2) {
+    font-size: 13px;
+  }
+
+  .tail span {
+    color: var(--black);
+    font-size: 12px;
+  }
+}
+
+/* For Tablet */
+@media screen and (max-width : 786px) {
+  .Updates {
+    width: 100%;
+  }
+}
